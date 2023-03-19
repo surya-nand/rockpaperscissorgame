@@ -1,0 +1,507 @@
+body{
+    background-color: #8CC461;
+}
+
+.header{
+    align-items: center;
+    justify-content: center;
+}
+.ScoreBoard{
+    display:  flex;
+    width: 70%;
+    height: 158px;
+    border: 2px solid #FFFFFF;
+    border-radius: 13px;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+#Computer_Score,#Your_Score{
+    width: 139px;
+    height: 128px;
+    background-color: #FFFFFF;
+    border-radius: 9px;
+    margin-top: 15px;
+    font-family: 'Roboto';
+    font-style: SemiBold;
+    font-size: 17px;
+    line-height: 20px;
+    line-height: 100%;
+    align-items: center;
+    justify-content: center;
+    vertical-align: Top;
+    letter-spacing: 10%;
+    Fill: Solid;
+    color:#656565;
+}
+
+#Computer_Score{
+    margin-left: 50%;
+
+}
+
+#Your_Score{
+    margin-left: 29px;
+}
+
+#GameName{
+    width: 139px;
+    height: 128px;
+    font-family: 'Roboto';
+    Font-style: SemiBold;
+    font-size: 40px;
+    line-height: 47px;
+    line-height: 100%;
+    align-items: Left;
+    vertical-align: Top;
+    letter-spacing: 10%;
+    Fill: Solid;
+    margin-top: 15px;
+    margin-left: 15px;
+    color: white;
+}
+
+#Computer_Score p,#Your_Score p{
+    margin-left: 17px;
+}
+
+#CScore,#YScore {
+    font-family: 'Roboto';
+    font-style: Bold;
+    font-size: 68px;
+    Fill: Solid;
+    color:#252525;
+
+}
+
+#YourText{
+    padding-left: 25px;
+    margin-top: 10px;
+}
+#ComputerText{
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+#CScore,#YScore{
+    padding-left: 30px;
+    margin-top:10px;
+    align-items: center;
+}
+
+#CScoreText,#YScoreText{
+    padding-left: 20px;
+    margin-top: -10px;
+    align-items: baseline;
+    padding-bottom: 10px;
+
+}
+
+#rock{
+    margin-left: 35%;
+    margin-top: 6%;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border: 16px solid #0074B6;
+    filter: drop-shadow(-1px 1px 11px rgba(0, 0, 0, 0.35));
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#rockimg{
+    width: 100%;
+    height: 65%;
+}
+
+#paper{
+    margin-left: 55%;
+    margin-top: 6%;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border: 16px solid #BD00FF;
+    filter: drop-shadow(-1px 1px 11px rgba(0, 0, 0, 0.35));
+    border-radius: 100%;
+    cursor: pointer;
+}
+#paperimg{
+   width: 80%;
+   height: 70%;
+}
+
+#scissor{
+    margin-left: 45%;
+    margin-top: 19%;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border: 16px solid #FFA943;
+    filter: drop-shadow(-1px 1px 11px rgba(0, 0, 0, 0.35));
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#scissorimg{
+    width: 60%;
+    height: 70%;
+}
+
+#line1{
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 9.5%;
+    width: 20%;
+    border: 8px solid rgba(0, 0, 0, 0.64);
+    z-index: -1;
+}
+
+#line2{
+    position: absolute;
+    margin-left: 47%;
+    margin-top: 15%;
+    width: 15%;
+    border: 8px solid rgba(0, 0, 0, 0.64);
+    z-index: -1;
+    transform: rotate(120deg);
+}
+
+#line3{
+    position: absolute;
+    margin-left: 32%;
+    margin-top: 15%;
+    width: 20%;
+    border: 8px solid rgba(0, 0, 0, 0.64);
+    z-index: -1;
+    transform: rotate(-120deg);
+}
+#resulttext{
+    position: absolute;
+    margin-left: 44.5%;
+    margin-top: 15%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 39px;
+    letter-spacing: 10%;
+    color: #FFFFFF;
+}
+.picked{
+    display: flex;
+}
+
+#UserPicked{
+    width: 113px;
+    height:16px;
+    margin-top: 10%;
+    margin-left: 31%;
+    font-family:'Roboto';
+    font-style: SemiBold;
+    font-size: 13px;
+    line-height: 20px;
+    Line-height: 100%;
+    Align-items: Left;
+    vertical-align: Top;
+    letter-spacing: 10%;
+    Fill: Solid;
+    color:#FFFFFF;
+
+}
+#PCPicked{
+    width: 113px;
+    height:16px;
+    margin-top: 10%;
+    padding-left: 30%;
+    font-family:'Roboto';
+    font-style: SemiBold;
+    font-size: 13px;
+    line-height: 20px;
+    Line-height: 100%;
+    Align-items: Left;
+    vertical-align: Top;
+    letter-spacing: 10%;
+    Fill: Solid;
+    color:#FFFFFF;
+}
+
+#usrock{
+    position: relative;
+    margin-top: 5%;
+    width: 110px;
+    height: 110px;
+    border: 16px solid #0074B6;
+    filter: drop-shadow(-1px 1px 11px rgba(0, 0, 0, 0.35));
+    border-radius: 50%;
+}
+
+#userimg{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: 28%;
+    margin-top: 1px;
+}
+#pcimg{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: 65.5%;
+    margin-top: 1px;
+}
+
+.rockresult{
+    border: 16px solid #0074B6;
+    filter: drop-shadow(-1px 1px 11px rgba(0, 0, 0, 0.35));
+    border-radius: 100%;
+}
+
+.paperresult{
+    border: 16px solid #BD00FF;
+    filter: drop-shadow(-1px 1px 11px rgba(0, 0, 0, 0.35));
+    border-radius: 100%;
+}
+
+.scissorresult{
+    border: 16px solid #FFA943;
+    filter: drop-shadow(-1px 1px 11px rgba(0, 0, 0, 0.35));
+    border-radius: 100%;
+}
+
+.winresult{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 0 20px rgb(0, 153, 51, 0.90), 
+    0 0 0 34px rgb(0, 153, 51, 0.25),
+    0 0 0 50px rgb(0, 153, 51, 0.15);
+    z-index: -1
+}
+
+div.fadeOut{
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.fadeIn{
+    opacity: 1;
+    pointer-events: all;
+}
+
+#againpc{
+    font-family: 'Roboto';
+    font-style: Extrabold;
+    margin-left: 15px;
+    font-size: 25px;
+    line-height: 29px;
+    line-height: 100%;
+    text-align:center;
+    Vertical-align: Top;
+    letter-spacing: 10%;
+    Fill: Solid;
+    color: #FFFFFF;
+}
+
+#playagain,#msgplayagain{
+    position: absolute;
+    width:174px;
+    height: 44px;
+    margin-left: 44.7%;
+    margin-top: 20.5%;
+    font-family: 'Roboto';
+    font-style: SemiBold;
+    font-size: 19px;
+    line-height: 18px;
+    Line-height: 100%;
+    Vertical-align: Top;
+    letter-spacing: 10%;
+    border-color: #FFFFFF;
+    border-radius: 9px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.GameRules {
+    box-sizing: border-box;
+    width: 278px;
+    height: 325px;
+    background: ghostwhite;
+    position: absolute;
+    top: 70%;
+    left: 86%;
+    transform: translate(-50%, -50%);
+    background: #004429;
+    border: 7px solid #FFFFFF;
+    border-radius: 13px;
+}
+
+#closeButton {
+    margin-left: 88%;
+    margin-top: -25px;
+    background: #FF0000;
+    border: 5px solid #FFFFFF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-family: 'Dangrek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+.rules-content {
+    position: relative;
+    margin-left: 5px auto;
+    margin-top: -10px;
+    max-width: 250px;
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.rules-content li{
+    list-style-type: square;
+    color: #FFD600;
+}
+
+.rules-content li::marker{
+    font-size: 2em;
+}
+
+.rules-content li span{
+    color: #FFFFFF;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    margin-top: 0%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29px;
+    color: #FFFFFF;
+}
+
+#rules,#msgrules{
+    font-family: Roboto;
+    font-style: SemiBold;
+    font-size: 21px;
+    line-height: 25px;
+    width: 119px;
+    height: 40px;
+    margin-top: 18%;
+    margin-left: 83%;
+    background-color: #8CC461;
+    border-radius: 9px;
+    border-color:#FFFFFF;
+    color: #FFFFFF;
+    align-items: inside;
+    border-width: 4px;
+    cursor: pointer;
+}
+#next{
+    font-family: Roboto;
+    font-style: SemiBold;
+    font-size: 21px;
+    line-height: 25px;
+    width: 119px;
+    height: 40px;
+    margin-top: -2.8%;
+    margin-left: 92%;
+    background-color: #8CC461;
+    border-radius: 9px;
+    border-color:#FFFFFF;
+    color: #FFFFFF;
+    align-items: inside;
+    border-width: 4px;
+    cursor: pointer;
+
+}
+.lowbutton{
+    display: flex;
+}
+
+.left-rules{
+    font-family: Roboto;
+    font-style: SemiBold;
+    font-size: 21px;
+    line-height: 25px;
+    width: 119px;
+    height: 40px;
+    margin-top: 18%;
+    margin-left: 83%;
+    background-color: #8CC461;
+    border-radius: 9px;
+    border-color:#FFFFFF;
+    color: #FFFFFF;
+    align-items: inside;
+    border-width: 4px;
+    cursor: pointer;
+}
+
+.Trophypage{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: -40%;
+}
+#hurray{
+    width: 464px;
+    height: 86px;
+    margin-top: 24%;
+    margin-left: 35%;
+    font-family: Roboto;
+    Font-style: SemiBold;
+    font-size: 91px;
+    line-height: 107px;
+    line-height: 100%;
+    align-items: Center;
+    vertical-align: Top;
+    letter-spacing: 10%;
+    color: white;
+}
+#message{
+    position: absolute;
+    width: 457px;
+    height: 48px;
+    margin-left: 34.5%;
+    margin-top: -2%;
+    font-family: Roboto;
+    Font-style: SemiBold;
+    font-size: 41px;
+    line-height: 48px;
+    line-height: 100%;
+    align-items: Center;
+    vertical-align: Top;
+    letter-spacing: 10%;
+    color:#FFFFFF;
+}
+
+#msgplayagain{
+    margin-top: 3.5%;
+    margin-left: 39.5%;
+    border-color: #FFFFFF;
+}
+#msgrules{
+    margin-top: 4.5%;
+    border-color: #FFFFFF;
+}
+
+#trophyimg{
+    position: absolute;
+    margin-top: -17%;
+    margin-left: -7.5%;
+}
+#starsimg{
+    position: absolute;
+    margin-top: -25%;
+    margin-left: -19% ;
+}

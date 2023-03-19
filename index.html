@@ -1,0 +1,123 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-paper-scissors-game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dangrek"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="GameScreen">
+      <div class="header">
+        <div class="ScoreBoard">
+          <div id="GameName">
+            <span>ROCK</span><br />
+            <span>PAPER</span><br />
+            <span>SCISSORS</span>
+          </div>
+          <div id="Computer_Score">
+            <p id="ComputerText">COMPUTER</p>
+            <p id="CScoreText">SCORE</p>
+            <p id="CScore">0</p>
+          </div>
+          <div id="Your_Score">
+            <p id="YourText">YOUR</p>
+            <p id="YScoreText">SCORE</p>
+            <p id="YScore">0</p>
+          </div>
+        </div>
+      </div>
+      <div class="GameArea ">
+        <button id="rock"><img id="rockimg" src="rock.png" /></button>
+        <button id="paper"><img id="paperimg" src="paper.png" /></button>
+        <button id="scissor"><img id="scissorimg" src="scissor.png" /></button>
+        <div id="line1"></div>
+        <div id="line2"></div>
+        <div id="line3"></div>
+      </div>
+
+      <div class="ResultArea fadeOut ">
+        <diV calss="result"> 
+        <p id="resulttext">YOU HAVE WON</p>
+        <button id="playagain">PLAY AGAIN</button>
+        </diV>
+        <div class="picked">
+        <p id="UserPicked">YOU PICKED</p>
+        <p id="PCPicked">PC PICKED</p>
+        </div>
+        <div id="UserSelection">
+          <button id="userimg" ><img id="rockimg" src="rock.png" /></button>
+        </div>
+        <div id="PCSelection">
+          <button id="pcimg" ><img id="rockimg" src="rock.png" /></button>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="full-rules fadeOut">
+        <div class="GameRules">
+        <button id="closeButton">X</button>
+        <h1>Game Rules</h1>
+          <div class="rules-content">
+            <ul>
+              <li>
+                <span
+                  >Rock beats scissors, scissors beat paper, and paper beats
+                  rock.</span
+                >
+              </li>
+              <br />
+              <li>
+                <span
+                  >Agree ahead of time whether you'll count off "rock, paper,
+                  scissors, shoot" or just "rock, paper, scissors."</span
+                >
+              </li>
+              <br />
+              <li>
+                <span
+                  >Use rock, paper, scissors to settle minor decisions or simply
+                  play to pass the time</span
+                >
+              </li>
+              <br />
+              <li>
+                <span
+                  >Reloading or closing the page will not reset the scores, use
+                  the "RESET" button instead.</span
+                >
+              </li>
+            </ul>
+          </div>
+          </div>
+          </div>
+
+        </div>
+        <div class="footer-button">
+           <div class="rulesbutton left-rules ">
+           <button  id="rules">RULES</button>
+           </div>
+           <div class="nextbutton fadeOut">
+           <button  id="next" >NEXT</button>
+           </div>
+        </div> 
+        </div>
+        <div class="TrophyPage fadeOut">
+            <span id="starsimg"><img src="Group 5.png"></span>
+            <span id="trophyimg"><img src="Vector (4).png"></span>
+            <h1 id="hurray">HURRAY!!</h1>
+            <P id="message">YOU WON THE GAME</P>
+            <button id="msgplayagain">PLAY AGAIN</button>
+            <button id="msgrules">RULES</button>
+            <div class="Trophyrules"></div>
+        </div>
+    <script src="script.js"></script>
+  </body>
+</html>
